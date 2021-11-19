@@ -17,7 +17,7 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        Label("Test1", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
+        Label("Test2", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
         
         NavigationView {
             List {
