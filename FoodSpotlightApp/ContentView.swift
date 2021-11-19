@@ -10,13 +10,15 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+  
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
     var body: some View {
+        Label("Test1", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
+        
         NavigationView {
             List {
                 ForEach(items) { item in
@@ -72,6 +74,7 @@ struct ContentView: View {
             }
         }
     }
+    
 }
 
 private let itemFormatter: DateFormatter = {
@@ -85,4 +88,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
+    
 }
