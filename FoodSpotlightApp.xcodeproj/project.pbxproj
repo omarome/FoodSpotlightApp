@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E36A52749B74E0077B113 /* RoundedCorners.swift */; };
 		0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */; };
 		0AFA21B12747F2EC00A94008 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* ContentView.swift */; };
 		0AFA21B32747F2ED00A94008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B22747F2ED00A94008 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6E36A52749B74E0077B113 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSpotlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppApp.swift; sourceTree = "<group>"; };
 		0AFA21B02747F2EC00A94008 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				0AFA21B72747F2ED00A94008 /* Persistence.swift */,
 				0AFA21B92747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld */,
 				0AFA21B42747F2ED00A94008 /* Preview Content */,
+				0A6E36A52749B74E0077B113 /* RoundedCorners.swift */,
 			);
 			path = FoodSpotlightApp;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */,
 				0AFA21BB2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld in Sources */,
 				0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */,
 				0AFA21B12747F2EC00A94008 /* ContentView.swift in Sources */,
