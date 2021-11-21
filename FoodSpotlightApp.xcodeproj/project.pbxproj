@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E36A52749B74E0077B113 /* RoundedCorners.swift */; };
+		0AD877E6274ABCCE00582AE9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */; };
+		0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */; };
+		0AD877EC274B061B00582AE9 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877EB274B061B00582AE9 /* MyMapView.swift */; };
 		0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */; };
-		0AFA21B12747F2EC00A94008 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* ContentView.swift */; };
+		0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* HomeView.swift */; };
 		0AFA21B32747F2ED00A94008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B22747F2ED00A94008 /* Assets.xcassets */; };
 		0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */; };
 		0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B72747F2ED00A94008 /* Persistence.swift */; };
@@ -38,9 +41,12 @@
 
 /* Begin PBXFileReference section */
 		0A6E36A52749B74E0077B113 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0AD877EB274B061B00582AE9 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSpotlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppApp.swift; sourceTree = "<group>"; };
-		0AFA21B02747F2EC00A94008 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AFA21B02747F2EC00A94008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0AFA21B22747F2ED00A94008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AFA21B72747F2ED00A94008 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -100,13 +106,16 @@
 		0AFA21AD2747F2EC00A94008 /* FoodSpotlightApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */,
+				0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */,
 				0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */,
-				0AFA21B02747F2EC00A94008 /* ContentView.swift */,
+				0AFA21B02747F2EC00A94008 /* HomeView.swift */,
 				0AFA21B22747F2ED00A94008 /* Assets.xcassets */,
 				0AFA21B72747F2ED00A94008 /* Persistence.swift */,
 				0AFA21B92747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld */,
 				0AFA21B42747F2ED00A94008 /* Preview Content */,
 				0A6E36A52749B74E0077B113 /* RoundedCorners.swift */,
+				0AD877EB274B061B00582AE9 /* MyMapView.swift */,
 			);
 			path = FoodSpotlightApp;
 			sourceTree = "<group>";
@@ -267,9 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */,
+				0AD877EC274B061B00582AE9 /* MyMapView.swift in Sources */,
 				0AFA21BB2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld in Sources */,
 				0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */,
-				0AFA21B12747F2EC00A94008 /* ContentView.swift in Sources */,
+				0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */,
+				0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */,
+				0AD877E6274ABCCE00582AE9 /* SearchBarView.swift in Sources */,
 				0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
