@@ -10,6 +10,38 @@ import CoreData
 import MapKit
 
 // this is the home page
+@available(iOS 15.0, *)
+struct HomeView: View {
+    
+    @ObservedObject var viewModel = HomeViewModel()
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(viewModel.businesses, id: \.id) { business in
+                    Text(business.name ?? "no name")
+                  
+                    
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle(Text("Helsinki"))
+            .searchable(text: $viewModel.searchText)
+         
+            .onAppear(perform: viewModel.search)
+
+        }
+    }
+}
+
+@available(iOS 15.0, *)
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}
+
+/*
 struct HomeView: View {
    // @EnvironmentObject private var hv: ContentViewModel
    
@@ -31,6 +63,7 @@ struct HomeView: View {
                     
                     .background(Color("appMainColor"))
              // map view
+                
                     VStack{
                         MyMapView()
                        
@@ -57,3 +90,4 @@ struct HomeView_Previews: PreviewProvider {
     }
     
 }
+*/
