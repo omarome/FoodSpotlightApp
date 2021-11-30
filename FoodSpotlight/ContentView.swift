@@ -7,8 +7,10 @@
 
 import SwiftUI
 import CoreData
+import MapKit
 
 struct ContentView: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -17,6 +19,9 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
+        
+        MapView() //map view
+        
         Label("Test1 Label", systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
         NavigationView {
             List {
@@ -41,6 +46,7 @@ struct ContentView: View {
             }
             Text("Select an item")
         }
+        
     }
 
     private func addItem() {

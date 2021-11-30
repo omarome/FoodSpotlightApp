@@ -16,6 +16,7 @@
 		0ABE185E2748363E002EE1AA /* FoodSpotlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABE185D2748363E002EE1AA /* FoodSpotlightTests.swift */; };
 		0ABE18682748363E002EE1AA /* FoodSpotlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABE18672748363E002EE1AA /* FoodSpotlightUITests.swift */; };
 		0ABE186A2748363E002EE1AA /* FoodSpotlightUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABE18692748363E002EE1AA /* FoodSpotlightUITestsLaunchTests.swift */; };
+		6A38981B27566FC400C7BB47 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A38981A27566FC400C7BB47 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		0ABE18632748363E002EE1AA /* FoodSpotlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSpotlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABE18672748363E002EE1AA /* FoodSpotlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightUITests.swift; sourceTree = "<group>"; };
 		0ABE18692748363E002EE1AA /* FoodSpotlightUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A38981A27566FC400C7BB47 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				0ABE18472748363C002EE1AA /* FoodSpotlightApp.swift */,
 				0ABE18492748363C002EE1AA /* ContentView.swift */,
+				6A38981A27566FC400C7BB47 /* MapView.swift */,
 				0ABE184B2748363E002EE1AA /* Assets.xcassets */,
 				0ABE18502748363E002EE1AA /* Persistence.swift */,
 				0ABE18522748363E002EE1AA /* FoodSpotlight.xcdatamodeld */,
@@ -265,6 +268,7 @@
 			files = (
 				0ABE18542748363E002EE1AA /* FoodSpotlight.xcdatamodeld in Sources */,
 				0ABE18512748363E002EE1AA /* Persistence.swift in Sources */,
+				6A38981B27566FC400C7BB47 /* MapView.swift in Sources */,
 				0ABE184A2748363C002EE1AA /* ContentView.swift in Sources */,
 				0ABE18482748363C002EE1AA /* FoodSpotlightApp.swift in Sources */,
 			);
@@ -429,6 +433,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FoodSpotlight/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location to show it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FoodSpotlight/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs your location to show it on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
