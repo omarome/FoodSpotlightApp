@@ -2,8 +2,9 @@
 //  SearchBarView.swift
 //  FoodSpotlightApp
 //
-//  Created by Omar on 21.11.2021.
+//  Created by Omar on 30.11.2021.
 //
+
 
 import SwiftUI
 

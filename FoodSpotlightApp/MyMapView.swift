@@ -9,7 +9,7 @@
 import MapKit
 import SwiftUI
 
-struct IdentifiablePlace: Identifiable {
+struct IdentifiablePlace1: Identifiable {
     let id: UUID
     let location: CLLocationCoordinate2D
     init(id: UUID = UUID(), lat: Double, long: Double ){
@@ -20,7 +20,7 @@ struct IdentifiablePlace: Identifiable {
     
 }
 struct MyMapView: View {
-    let  place = IdentifiablePlace(lat: 51.507222, long: -0.1275)
+    let  place = IdentifiablePlace1(lat: 51.507222, long: -0.1275)
     private let locationManager = CLLocationManager()
     
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))

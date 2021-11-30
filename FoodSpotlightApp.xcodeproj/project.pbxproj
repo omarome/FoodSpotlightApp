@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E36A52749B74E0077B113 /* RoundedCorners.swift */; };
-		0AA80EBE274FF09000497A88 /* YlepApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA80EBD274FF09000497A88 /* YlepApiService.swift */; };
-		0AD877E6274ABCCE00582AE9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */; };
-		0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */; };
-		0AD877EC274B061B00582AE9 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877EB274B061B00582AE9 /* MyMapView.swift */; };
+		0A545AFD2756B42F00D98FE0 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545AFB2756B42F00D98FE0 /* Place+CoreDataClass.swift */; };
+		0A545AFE2756B42F00D98FE0 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545AFC2756B42F00D98FE0 /* Place+CoreDataProperties.swift */; };
+		0A545B082756B55600D98FE0 /* BusinessDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B072756B55600D98FE0 /* BusinessDataModel.swift */; };
+		0A545B0B2756B5CF00D98FE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B0A2756B5CF00D98FE0 /* HomeView.swift */; };
+		0A545B0D2756B61400D98FE0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B0C2756B61400D98FE0 /* CardView.swift */; };
+		0A545B0F2756B63500D98FE0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B0E2756B63500D98FE0 /* DetailsView.swift */; };
+		0A545B132756B7B700D98FE0 /* YelpApiParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B122756B7B700D98FE0 /* YelpApiParser.swift */; };
+		0A545B152756B7E800D98FE0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B142756B7E800D98FE0 /* APIConstants.swift */; };
+		0A545B172756B89500D98FE0 /* DataTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B162756B89500D98FE0 /* DataTaskModel.swift */; };
+		0A545B192756BC6B00D98FE0 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B182756BC6A00D98FE0 /* SearchBarView.swift */; };
+		0A545B1B2756C01400D98FE0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B1A2756C01400D98FE0 /* MapView.swift */; };
+		0A545B1D2756C46800D98FE0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B1C2756C46800D98FE0 /* ListView.swift */; };
+		0A545B212756C61A00D98FE0 /* RoundedFCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A545B202756C61A00D98FE0 /* RoundedFCorners.swift */; };
 		0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */; };
-		0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* HomeView.swift */; };
 		0AFA21B32747F2ED00A94008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B22747F2ED00A94008 /* Assets.xcassets */; };
 		0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */; };
 		0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B72747F2ED00A94008 /* Persistence.swift */; };
@@ -41,14 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A6E36A52749B74E0077B113 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
-		0AA80EBD274FF09000497A88 /* YlepApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YlepApiService.swift; sourceTree = "<group>"; };
-		0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
-		0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		0AD877EB274B061B00582AE9 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
+		0A545AFB2756B42F00D98FE0 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0A545AFC2756B42F00D98FE0 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0A545B072756B55600D98FE0 /* BusinessDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDataModel.swift; sourceTree = "<group>"; };
+		0A545B0A2756B5CF00D98FE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0A545B0C2756B61400D98FE0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0A545B0E2756B63500D98FE0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		0A545B122756B7B700D98FE0 /* YelpApiParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpApiParser.swift; sourceTree = "<group>"; };
+		0A545B142756B7E800D98FE0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		0A545B162756B89500D98FE0 /* DataTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskModel.swift; sourceTree = "<group>"; };
+		0A545B182756BC6A00D98FE0 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		0A545B1A2756C01400D98FE0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0A545B1C2756C46800D98FE0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		0A545B202756C61A00D98FE0 /* RoundedFCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedFCorners.swift; sourceTree = "<group>"; };
 		0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSpotlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppApp.swift; sourceTree = "<group>"; };
-		0AFA21B02747F2EC00A94008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0AFA21B22747F2ED00A94008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AFA21B72747F2ED00A94008 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -85,12 +99,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AA80EBC274FF06400497A88 /* Services */ = {
+		0A545AFA2756B3F100D98FE0 /* CoreDataFiles */ = {
 			isa = PBXGroup;
 			children = (
-				0AA80EBD274FF09000497A88 /* YlepApiService.swift */,
+				0A545AFB2756B42F00D98FE0 /* Place+CoreDataClass.swift */,
+				0A545AFC2756B42F00D98FE0 /* Place+CoreDataProperties.swift */,
 			);
-			path = Services;
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		0A545B062756B53900D98FE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A545B072756B55600D98FE0 /* BusinessDataModel.swift */,
+				0A545B162756B89500D98FE0 /* DataTaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A545B092756B58300D98FE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A545B0A2756B5CF00D98FE0 /* HomeView.swift */,
+				0A545B0C2756B61400D98FE0 /* CardView.swift */,
+				0A545B0E2756B63500D98FE0 /* DetailsView.swift */,
+				0A545B182756BC6A00D98FE0 /* SearchBarView.swift */,
+				0A545B1A2756C01400D98FE0 /* MapView.swift */,
+				0A545B1C2756C46800D98FE0 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A545B112756B79000D98FE0 /* NetworkingServices */ = {
+			isa = PBXGroup;
+			children = (
+				0A545B122756B7B700D98FE0 /* YelpApiParser.swift */,
+				0A545B142756B7E800D98FE0 /* APIConstants.swift */,
+			);
+			path = NetworkingServices;
+			sourceTree = "<group>";
+		};
+		0A545B1E2756C59400D98FE0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A545B202756C61A00D98FE0 /* RoundedFCorners.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		0AFA21A22747F2EC00A94008 = {
@@ -116,17 +170,16 @@
 		0AFA21AD2747F2EC00A94008 /* FoodSpotlightApp */ = {
 			isa = PBXGroup;
 			children = (
-				0AA80EBC274FF06400497A88 /* Services */,
-				0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */,
-				0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */,
+				0A545B1E2756C59400D98FE0 /* Helpers */,
+				0A545B112756B79000D98FE0 /* NetworkingServices */,
+				0A545AFA2756B3F100D98FE0 /* CoreDataFiles */,
+				0A545B092756B58300D98FE0 /* Views */,
+				0A545B062756B53900D98FE0 /* Models */,
 				0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */,
-				0AFA21B02747F2EC00A94008 /* HomeView.swift */,
 				0AFA21B22747F2ED00A94008 /* Assets.xcassets */,
 				0AFA21B72747F2ED00A94008 /* Persistence.swift */,
 				0AFA21B92747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld */,
 				0AFA21B42747F2ED00A94008 /* Preview Content */,
-				0A6E36A52749B74E0077B113 /* RoundedCorners.swift */,
-				0AD877EB274B061B00582AE9 /* MyMapView.swift */,
 			);
 			path = FoodSpotlightApp;
 			sourceTree = "<group>";
@@ -286,15 +339,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */,
-				0AD877EC274B061B00582AE9 /* MyMapView.swift in Sources */,
+				0A545B1D2756C46800D98FE0 /* ListView.swift in Sources */,
+				0A545B1B2756C01400D98FE0 /* MapView.swift in Sources */,
+				0A545B0B2756B5CF00D98FE0 /* HomeView.swift in Sources */,
+				0A545B172756B89500D98FE0 /* DataTaskModel.swift in Sources */,
+				0A545B152756B7E800D98FE0 /* APIConstants.swift in Sources */,
 				0AFA21BB2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld in Sources */,
+				0A545B0D2756B61400D98FE0 /* CardView.swift in Sources */,
 				0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */,
-				0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */,
-				0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */,
-				0AD877E6274ABCCE00582AE9 /* SearchBarView.swift in Sources */,
+				0A545B082756B55600D98FE0 /* BusinessDataModel.swift in Sources */,
+				0A545AFE2756B42F00D98FE0 /* Place+CoreDataProperties.swift in Sources */,
+				0A545B192756BC6B00D98FE0 /* SearchBarView.swift in Sources */,
+				0A545AFD2756B42F00D98FE0 /* Place+CoreDataClass.swift in Sources */,
+				0A545B0F2756B63500D98FE0 /* DetailsView.swift in Sources */,
 				0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */,
-				0AA80EBE274FF09000497A88 /* YlepApiService.swift in Sources */,
+				0A545B132756B7B700D98FE0 /* YelpApiParser.swift in Sources */,
+				0A545B212756C61A00D98FE0 /* RoundedFCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
