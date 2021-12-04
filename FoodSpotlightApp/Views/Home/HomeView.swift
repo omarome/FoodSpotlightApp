@@ -1,9 +1,8 @@
-
 //
 //  HomeView.swift
-//  FoodSpotlight2
+//  FoodSpotlightApp
 //
-//  Created by Omar on 28.11.2021.
+//  Created by Omar on 3.12.2021.
 //
 
 import SwiftUI

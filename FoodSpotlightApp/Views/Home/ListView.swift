@@ -2,13 +2,14 @@
 //  ListView.swift
 //  FoodSpotlightApp
 //
-//  Created by Omar on 30.11.2021.
+//  Created by Omar on 4.12.2021.
 //
 
 import SwiftUI
+import CoreData
+
 
 struct ListView: View {
-    
     @StateObject var jsonModel =  DataTaskModel()
     @Environment(\.managedObjectContext) var context
     
@@ -17,7 +18,7 @@ struct ListView: View {
                     [NSSortDescriptor(keyPath: \Place.name, ascending: true)]) var results: FetchedResults<Place>
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             VStack {
                 if results.isEmpty{
                     if jsonModel.businesses.isEmpty{
@@ -25,7 +26,7 @@ struct ListView: View {
                         ProgressView()
                         //fetching data
                             .onAppear(perform: {
-                                jsonModel.dataTaskCall(context: context, "food",.init(latitude: 60.1699, longitude: 24.9384), "restaurants")
+                                jsonModel.dataTaskCall(context: context, term: "food",location: .init(latitude: 60.1699, longitude: 24.9384), cat: "restaurants")
                     
                             })
                         //when array is clear indicator appears

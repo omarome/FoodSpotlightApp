@@ -4,17 +4,18 @@
 //
 //  Created by Omar on 30.11.2021.
 //
-/*
 import Foundation
 import CoreData
 import CoreLocation
 
 class DataTaskModel: ObservableObject{
     @Published var businesses : [Business] = []
-    let ylepApiParser = YelpApiParser()
+    let yelpApiParser = YelpApiParser()
     
-    func dataTaskCall(context: NSManagedObjectContext,_ term: String, _ location: CLLocation, _ category: String ){
-        let dataTask = URLSession.shared.dataTask(with: ylepApiParser.urlRequest(term: term, location: location, category: category)) { (data, response, error) in
+  
+    
+    func dataTaskCall(context: NSManagedObjectContext,term: String, location: CLLocation, cat: String ){
+        let dataTask = URLSession.shared.dataTask(with: yelpApiParser.urlRequest(term: term, location: location, cat: cat)) { (data, response, error) in
             if let error = error {
                 print("Request error: ", error)
                 return
@@ -39,8 +40,10 @@ class DataTaskModel: ObservableObject{
                             //save it in the core data
                             
                             self.saveData(context: context)
+                            
                          
                         }
+                   
                     } catch let error {
                         print("Error decoding: ", error)
                     }
@@ -63,6 +66,9 @@ class DataTaskModel: ObservableObject{
          //   let coordinatesEntity = PlacesCoordinates(context: context)
            // coordinatesEntity.latitude = data.coordinates?.latitude ?? 0.0
             //coordinatesEntity.longitude = data.coordinates?.longitude ?? 0.0
+            entity.alias = data.alias
+            entity.title = data.formattedCategory
+            
         }
         // saving all pending data at once
         do{

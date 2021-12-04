@@ -27,7 +27,26 @@ struct CardView: View {
                 }
                 Spacer()
             }
-           
+            /*
+             // here we fetch from both dataCore and network by conditional statments
+            VStack(alignment: .leading, spacing: 10, content: {
+              
+                Text((business == nil ? fetchedData?.imageURL ?? "imageUrl 0" : business?.imageURL) ?? "no url images")
+                    .font(.title2)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.black)
+                
+                Text((business == nil ? fetchedData?.id ?? "no id" : business?.id) ?? " there is no id")
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                
+                Text(String((business == nil ? fetchedData?.longitude ?? 0.0 : business?.coordinates?.longitude) ?? 0.0))
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .foregroundColor(.gray)
+                 
+            })*/
         }
     }
 }
