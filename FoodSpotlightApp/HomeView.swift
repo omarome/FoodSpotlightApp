@@ -4,7 +4,6 @@
 //
 //  Created by Omar on 19.11.2021.
 //
-
 import SwiftUI
 import CoreData
 import MapKit
@@ -12,23 +11,81 @@ import MapKit
 // this is the home page
 @available(iOS 15.0, *)
 struct HomeView: View {
-    
-    @ObservedObject var viewModel = HomeViewModel()
-    
+
+    @EnvironmentObject var viewModel: HomeViewModel
+    @Environment(\.managedObjectContext) var context
+
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.businesses, id: \.id) { business in
-                    Text(business.name ?? "no name")
-                  
-                    
+            VStack(alignment: .leading) {
+                // Category
+                Group {
+                    Text(L10n.categories)
+                        .font(.custom(.poppinsSemibold, size: 16))
+                        .padding(.top, .small)
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(FoodCategory.allCases, id: \.self) { category in
+                                CategoryView(selectedCategory: $viewModel.selectedCategory, category: category)
+                            }
+                        }.padding(.small)
+                    }
+                }.padding(.leading, .large)
+
+                // List
+                List(viewModel.businesses, id: \.id) { business in
+                    ZStack {
+                        NavigationLink(destination: DetailView(id: business.id!)) {
+                            EmptyView().opacity(0).frame(width: 0)
+                        }
+                        BusinessCell(business: business)
+                            .padding(.bottom, .small)
+                    }
+                    .listRowSeparator(.hidden)
+                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                        Button("Save") {
+                            // Save here
+                            do {
+                                try viewModel.save(business: business, with: context)
+                                print("Saved")
+                            } catch {
+                                print(error.localizedDescription)
+                            }
+                        }
+                    }
+                }
+                .listStyle(.plain)
+                .navigationTitle(Text(viewModel.cityName))
+                .searchable(text: $viewModel.searchText, prompt: Text(L10n.searchFood)) {
+                    ForEach(viewModel.completions, id: \.self) { completion in
+                        Text(completion).searchCompletion(completion)
+                    }
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: { viewModel.showProfile.toggle() }) {
+                            Image(systemName: "person")
+                        }
+                    }
+                }
+                .safeAreaInset(edge: .bottom) {
+                    Rectangle()
+                        .fill(LinearGradient(colors: [.white, .white.opacity(0)], startPoint: .bottom, endPoint: .top))
+                        .frame(height: 90)
+                }
+                .edgesIgnoringSafeArea(.bottom)
+            }
+            .sheet(isPresented: $viewModel.showProfile) {
+                ProfileView()
+            }
+            .sheet(isPresented: $viewModel.showModal, onDismiss: nil) {
+                PermissionView {
+                    viewModel.requestPermission()
                 }
             }
-            .listStyle(.plain)
-            .navigationTitle(Text("Helsinki"))
-            .searchable(text: $viewModel.searchText)
-         
-            .onAppear(perform: viewModel.search)
+            .onChange(of: viewModel.showModal) { newValue in
+                viewModel.request()
+            }
 
         }
     }
@@ -38,56 +95,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(HomeViewModel())
     }
 }
-
-/*
-struct HomeView: View {
-   // @EnvironmentObject private var hv: ContentViewModel
-   
-        
-    
-    var body: some View {
-        
-            ScrollView{
-        //headline with name of the app
-                VStack{
-                    Text("Food Spotlight")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .frame( height: 50)
-                        .frame(maxWidth: .infinity)
-                    //search bar didnt bind it with data yet
-                    SearchBarView()
-                }.foregroundColor(.white)
-                    
-                    .background(Color("appMainColor"))
-             // map view
-                
-                    VStack{
-                        MyMapView()
-                       
-                    }   .frame( height: 500)
-                        .frame(width: 375)
-                        .padding()
-                //rounding the background from the right side only
-                        .background(RoundedCorners(color: .white, tl: 0, tr: 60, bl: 0, br: 0))
-               
-               // here is the bottom bar, which should show the language and favorite list
-                HStack{
-                    Text("footer")
-                    
-                }
-            
-            }.background(Color("appMainColor"))
-
-    }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-    
-}
-*/

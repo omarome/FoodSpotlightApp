@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct FoodSpotlightAppApp: App {
-    let persistenceController = PersistenceController.shared
-
+    let viewModel = HomeViewModel()
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(viewModel)
+                .environment(\.managedObjectContext, viewModel.container.viewContext)
         }
     }
 }

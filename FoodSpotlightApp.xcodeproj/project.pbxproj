@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E36A52749B74E0077B113 /* RoundedCorners.swift */; };
-		0AA80EBE274FF09000497A88 /* YlepApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA80EBD274FF09000497A88 /* YlepApiService.swift */; };
+		0AA80EBE274FF09000497A88 /* YelpApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA80EBD274FF09000497A88 /* YelpApiService.swift */; };
 		0AD877E6274ABCCE00582AE9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */; };
 		0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */; };
 		0AD877EC274B061B00582AE9 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877EB274B061B00582AE9 /* MyMapView.swift */; };
@@ -16,11 +16,22 @@
 		0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* HomeView.swift */; };
 		0AFA21B32747F2ED00A94008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B22747F2ED00A94008 /* Assets.xcassets */; };
 		0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */; };
-		0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B72747F2ED00A94008 /* Persistence.swift */; };
-		0AFA21BB2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B92747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld */; };
+		0AFA21BB2747F2ED00A94008 /* BusinessModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B92747F2ED00A94008 /* BusinessModel.xcdatamodeld */; };
 		0AFA21C52747F2ED00A94008 /* FoodSpotlightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21C42747F2ED00A94008 /* FoodSpotlightAppTests.swift */; };
 		0AFA21CF2747F2ED00A94008 /* FoodSpotlightAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21CE2747F2ED00A94008 /* FoodSpotlightAppUITests.swift */; };
 		0AFA21D12747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21D02747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift */; };
+		6AC980B32757D73C00128A10 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B22757D73C00128A10 /* BusinessCell.swift */; };
+		6AC980B62757D8B100128A10 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B52757D8B100128A10 /* DetailView.swift */; };
+		6AC980B82757D8BE00128A10 /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B72757D8BE00128A10 /* DetailCard.swift */; };
+		6AC980BB2757DB3700128A10 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980BA2757DB3700128A10 /* String.swift */; };
+		6AC980BD2757DC0900128A10 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980BC2757DC0900128A10 /* Images.swift */; };
+		6AC980C02757DDF900128A10 /* ExtensionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6AC980BF2757DDF900128A10 /* ExtensionKit */; };
+		6AC980C32757E1B000128A10 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980C22757E1B000128A10 /* ProfileView.swift */; };
+		6AC980C62757E28700128A10 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980C52757E28700128A10 /* CGFloat.swift */; };
+		6AC980C82757E2AC00128A10 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980C72757E2AC00128A10 /* Font.swift */; };
+		6AD4F5302750F8A500EB87A8 /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4F52F2750F8A500EB87A8 /* PermissionView.swift */; };
+		6AD4F5322751185600EB87A8 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4F5312751185600EB87A8 /* CategoryView.swift */; };
+		6AD4F53427511B2200EB87A8 /* FoodCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4F53327511B2200EB87A8 /* FoodCategories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +53,7 @@
 
 /* Begin PBXFileReference section */
 		0A6E36A52749B74E0077B113 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
-		0AA80EBD274FF09000497A88 /* YlepApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YlepApiService.swift; sourceTree = "<group>"; };
+		0AA80EBD274FF09000497A88 /* YelpApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpApiService.swift; sourceTree = "<group>"; };
 		0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0AD877EB274B061B00582AE9 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
@@ -51,13 +62,27 @@
 		0AFA21B02747F2EC00A94008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0AFA21B22747F2ED00A94008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0AFA21B72747F2ED00A94008 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0AFA21BA2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodSpotlightApp.xcdatamodel; sourceTree = "<group>"; };
 		0AFA21C02747F2ED00A94008 /* FoodSpotlightAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSpotlightAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21C42747F2ED00A94008 /* FoodSpotlightAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppTests.swift; sourceTree = "<group>"; };
 		0AFA21CA2747F2ED00A94008 /* FoodSpotlightAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSpotlightAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21CE2747F2ED00A94008 /* FoodSpotlightAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppUITests.swift; sourceTree = "<group>"; };
 		0AFA21D02747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6AC980B22757D73C00128A10 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		6AC980B52757D8B100128A10 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6AC980B72757D8BE00128A10 /* DetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCard.swift; sourceTree = "<group>"; };
+		6AC980BA2757DB3700128A10 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6AC980BC2757DC0900128A10 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		6AC980C22757E1B000128A10 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6AC980C52757E28700128A10 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		6AC980C72757E2AC00128A10 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		6AC980C92757E46100128A10 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		6AC980CA2757E46100128A10 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		6AC980CB2757E46100128A10 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		6AC980CC2757EF4B00128A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6AD4F52F2750F8A500EB87A8 /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		6AD4F5312751185600EB87A8 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		6AD4F53327511B2200EB87A8 /* FoodCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC980C02757DDF900128A10 /* ExtensionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +114,7 @@
 		0AA80EBC274FF06400497A88 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0AA80EBD274FF09000497A88 /* YlepApiService.swift */,
+				0AA80EBD274FF09000497A88 /* YelpApiService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -116,17 +142,27 @@
 		0AFA21AD2747F2EC00A94008 /* FoodSpotlightApp */ = {
 			isa = PBXGroup;
 			children = (
+				6AC980CC2757EF4B00128A10 /* Info.plist */,
+				6AC980CB2757E46100128A10 /* Poppins-Medium.ttf */,
+				6AC980C92757E46100128A10 /* Poppins-Regular.ttf */,
+				6AC980CA2757E46100128A10 /* Poppins-SemiBold.ttf */,
+				6AC980C42757E26000128A10 /* Helpers */,
+				6AC980C12757E19800128A10 /* Profile */,
+				6AC980B92757DB0900128A10 /* Generated */,
+				6AC980B42757D88F00128A10 /* Details */,
 				0AA80EBC274FF06400497A88 /* Services */,
 				0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */,
+				6AD4F52F2750F8A500EB87A8 /* PermissionView.swift */,
 				0AD877E5274ABCCE00582AE9 /* SearchBarView.swift */,
 				0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */,
 				0AFA21B02747F2EC00A94008 /* HomeView.swift */,
 				0AFA21B22747F2ED00A94008 /* Assets.xcassets */,
-				0AFA21B72747F2ED00A94008 /* Persistence.swift */,
-				0AFA21B92747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld */,
+				0AFA21B92747F2ED00A94008 /* BusinessModel.xcdatamodeld */,
 				0AFA21B42747F2ED00A94008 /* Preview Content */,
 				0A6E36A52749B74E0077B113 /* RoundedCorners.swift */,
 				0AD877EB274B061B00582AE9 /* MyMapView.swift */,
+				6AD4F5312751185600EB87A8 /* CategoryView.swift */,
+				6AC980B22757D73C00128A10 /* BusinessCell.swift */,
 			);
 			path = FoodSpotlightApp;
 			sourceTree = "<group>";
@@ -156,6 +192,42 @@
 			path = FoodSpotlightAppUITests;
 			sourceTree = "<group>";
 		};
+		6AC980B42757D88F00128A10 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				6AC980B52757D8B100128A10 /* DetailView.swift */,
+				6AC980B72757D8BE00128A10 /* DetailCard.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		6AC980B92757DB0900128A10 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				6AD4F53327511B2200EB87A8 /* FoodCategories.swift */,
+				6AC980BA2757DB3700128A10 /* String.swift */,
+				6AC980BC2757DC0900128A10 /* Images.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		6AC980C12757E19800128A10 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6AC980C22757E1B000128A10 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6AC980C42757E26000128A10 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6AC980C52757E28700128A10 /* CGFloat.swift */,
+				6AC980C72757E2AC00128A10 /* Font.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +244,9 @@
 			dependencies = (
 			);
 			name = FoodSpotlightApp;
+			packageProductDependencies = (
+				6AC980BF2757DDF900128A10 /* ExtensionKit */,
+			);
 			productName = FoodSpotlightApp;
 			productReference = 0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +319,9 @@
 				Base,
 			);
 			mainGroup = 0AFA21A22747F2EC00A94008;
+			packageReferences = (
+				6AC980BE2757DDF900128A10 /* XCRemoteSwiftPackageReference "ExtensionKit" */,
+			);
 			productRefGroup = 0AFA21AC2747F2EC00A94008 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,15 +364,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC980B82757D8BE00128A10 /* DetailCard.swift in Sources */,
 				0A6E36A62749B74E0077B113 /* RoundedCorners.swift in Sources */,
+				6AC980B32757D73C00128A10 /* BusinessCell.swift in Sources */,
+				6AC980BD2757DC0900128A10 /* Images.swift in Sources */,
 				0AD877EC274B061B00582AE9 /* MyMapView.swift in Sources */,
-				0AFA21BB2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld in Sources */,
-				0AFA21B82747F2ED00A94008 /* Persistence.swift in Sources */,
+				6AC980B62757D8B100128A10 /* DetailView.swift in Sources */,
+				0AFA21BB2747F2ED00A94008 /* BusinessModel.xcdatamodeld in Sources */,
 				0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */,
+				6AD4F5322751185600EB87A8 /* CategoryView.swift in Sources */,
+				6AC980C32757E1B000128A10 /* ProfileView.swift in Sources */,
+				6AD4F5302750F8A500EB87A8 /* PermissionView.swift in Sources */,
+				6AC980C82757E2AC00128A10 /* Font.swift in Sources */,
 				0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */,
 				0AD877E6274ABCCE00582AE9 /* SearchBarView.swift in Sources */,
+				6AC980C62757E28700128A10 /* CGFloat.swift in Sources */,
+				6AD4F53427511B2200EB87A8 /* FoodCategories.swift in Sources */,
 				0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */,
-				0AA80EBE274FF09000497A88 /* YlepApiService.swift in Sources */,
+				6AC980BB2757DB3700128A10 /* String.swift in Sources */,
+				0AA80EBE274FF09000497A88 /* YelpApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +543,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodSpotlightApp/Preview Content\"";
+				DEVELOPMENT_TEAM = M7V955J3QF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodSpotlightApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,8 +575,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodSpotlightApp/Preview Content\"";
+				DEVELOPMENT_TEAM = M7V955J3QF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodSpotlightApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -636,14 +732,33 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		6AC980BE2757DDF900128A10 /* XCRemoteSwiftPackageReference "ExtensionKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gtokman/ExtensionKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AC980BF2757DDF900128A10 /* ExtensionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AC980BE2757DDF900128A10 /* XCRemoteSwiftPackageReference "ExtensionKit" */;
+			productName = ExtensionKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		0AFA21B92747F2ED00A94008 /* FoodSpotlightApp.xcdatamodeld */ = {
+		0AFA21B92747F2ED00A94008 /* BusinessModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				0AFA21BA2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodel */,
 			);
 			currentVersion = 0AFA21BA2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodel */;
-			path = FoodSpotlightApp.xcdatamodeld;
+			path = BusinessModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
