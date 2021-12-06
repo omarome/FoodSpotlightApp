@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 import SwiftUI
 
-struct ProfileView: View {
+struct FavoriteView: View {
 
     @Environment(\.managedObjectContext) var context
     @FetchRequest(
@@ -61,6 +61,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        FavoriteView()
     }
 }

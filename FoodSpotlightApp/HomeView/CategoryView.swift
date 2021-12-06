@@ -1,4 +1,4 @@
-//
+
 //  CategoryView.swift
 //  FoodSpotlightApp
 //
@@ -20,9 +20,9 @@ struct CategoryView: View {
                     .bold()
             }
         }
-   //     .padding(.small)
- //       .padding(.horizontal, .medium)
-        .background(selectedCategory == category ? Color.red : .white)
+        .padding(.small)
+        //.padding(.horizontal, .medium)
+        .background(selectedCategory == category ? Color.yellow : .white)
         .cornerRadius(20)
         .foregroundColor(.black)
     }

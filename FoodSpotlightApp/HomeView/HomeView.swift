@@ -17,6 +17,14 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
+            VStack{
+                VStack{
+                    Text(viewModel.cityName)
+                        .font(.largeTitle.bold())
+                        
+                        .frame(width: 200)
+                        .foregroundColor(.blue)
+                }
             VStack(alignment: .leading) {
                 // Category
                 Group {
@@ -55,7 +63,7 @@ struct HomeView: View {
                     }
                 }
                 .listStyle(.plain)
-                .navigationTitle(Text(viewModel.cityName))
+                .navigationTitle(Text("Food spotlight"))
                 .searchable(text: $viewModel.searchText, prompt: Text(L10n.searchFood)) {
                     ForEach(viewModel.completions, id: \.self) { completion in
                         Text(completion).searchCompletion(completion)
@@ -63,8 +71,12 @@ struct HomeView: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button(action: { viewModel.showProfile.toggle() }) {
-                            Image(systemName: "person")
+                        HStack{
+   
+                            Button(action: { viewModel.showProfile.toggle() }) {
+                                Image(systemName: "heart")
+                                
+                            }
                         }
                     }
                 }
@@ -76,7 +88,7 @@ struct HomeView: View {
                 .edgesIgnoringSafeArea(.bottom)
             }
             .sheet(isPresented: $viewModel.showProfile) {
-                ProfileView()
+                FavoriteView()
             }
             .sheet(isPresented: $viewModel.showModal, onDismiss: nil) {
                 PermissionView {
@@ -90,7 +102,7 @@ struct HomeView: View {
         }
     }
 }
-
+}
 @available(iOS 15.0, *)
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
