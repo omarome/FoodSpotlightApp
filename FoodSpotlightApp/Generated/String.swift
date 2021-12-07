@@ -27,7 +27,7 @@ internal enum L10n {
   /// permission.desc.text
   internal static let findNewCoolSpotsToEat = L10n.tr("Localizable", "Find new cool spots to eat")
   /// permission.title.text
-  internal static let foodee = L10n.tr("Localizable", "Foodee")
+  internal static let splfood = L10n.tr("Localizable", "Food Spotlight")
   /// permission.button.title
   internal static let getStarted = L10n.tr("Localizable", "Get Started")
   /// home.cat.icecream.text

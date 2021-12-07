@@ -8,12 +8,16 @@
 
 import MapKit
 import SwiftUI
+import AVFoundation
 
 @available(iOS 15.0, *)
 struct MyMapView: View {
     let id: String
     @EnvironmentObject var viewModel: HomeViewModel
     @Environment(\.presentationMode) var presentationMode
+    
+    // for voice direction navigation
+    //var speachsynthesizer = AVSpeechSynthesizer()
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -22,8 +26,14 @@ struct MyMapView: View {
                 .fill(Color.clear)
 
             // Map
-            Map(coordinateRegion: $viewModel.region, annotationItems: viewModel.business != nil ? viewModel.business!.mapItems : []) {
-                MapMarker(coordinate: $0.coordinate, tint: .blue)
+            Map(coordinateRegion: $viewModel.region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: viewModel.business != nil ? viewModel.business!.mapItems : []) {
+                //MapMarker(coordinate: $0.coordinate, tint: .pink
+                
+                /// STILL IN PROGRESS
+                ///
+                /// 
+                ///
+                MapMarker(coordinate: $0.coordinate, tint: .blue) 
             }
             .frame(height: UIScreen.main.bounds.height * 1)
 

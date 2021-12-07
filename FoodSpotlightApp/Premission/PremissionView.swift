@@ -35,7 +35,7 @@ struct PermissionView: View {
                 }.frame(height: proxy.size.height / 3)
 
                 // Text & Button
-                Text(L10n.foodee)
+                Text(L10n.splfood)
                     .font(.custom(.poppinsSemibold, size: 38))
                     .padding(.bottom, .large)
 
@@ -43,6 +43,7 @@ struct PermissionView: View {
                     .font(.custom(.poppinsMedium, size: 16))
 
                 Spacer()
+                    .frame(width: nil)
 
                 // Button
                 Button(action: action) {
@@ -52,7 +53,7 @@ struct PermissionView: View {
                 .padding()
                 .frame(maxWidth: proxy.size.width - 50)
                 .background(Color.blue)
-                .cornerRadius(50)
+                .cornerRadius(40)
 //                .modifier(ShadowModifier())
                 .foregroundColor(.white)
             }
