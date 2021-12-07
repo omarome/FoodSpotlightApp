@@ -54,7 +54,7 @@ struct PermissionView: View {
                 .frame(maxWidth: proxy.size.width - 50)
                 .background(Color.blue)
                 .cornerRadius(40)
-//                .modifier(ShadowModifier())
+                .modifier(ShadowModifier())
                 .foregroundColor(.white)
             }
         }.onAppear {

@@ -90,7 +90,7 @@ struct DetailCard: View {
             .padding().padding()
             .background(Color.white)
             .cornerRadius(.xLarge)
-            //.modifier(ShadowModifier())
+            .modifier(ShadowModifier())
             .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height * 1)
             }
         

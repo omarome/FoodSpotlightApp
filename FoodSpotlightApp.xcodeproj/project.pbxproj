@@ -21,7 +21,7 @@
 		0AFA21C52747F2ED00A94008 /* FoodSpotlightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21C42747F2ED00A94008 /* FoodSpotlightAppTests.swift */; };
 		0AFA21CF2747F2ED00A94008 /* FoodSpotlightAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21CE2747F2ED00A94008 /* FoodSpotlightAppUITests.swift */; };
 		0AFA21D12747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21D02747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift */; };
-		6A730A67275ED4E500FE550B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A730A66275ED4E500FE550B /* Assets.xcassets */; };
+		6A9FD2EE275FC116000C37CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9FD2ED275FC116000C37CB /* Assets.xcassets */; };
 		6AC980B62757D8B100128A10 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B52757D8B100128A10 /* DetailView.swift */; };
 		6AC980B82757D8BE00128A10 /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B72757D8BE00128A10 /* DetailCard.swift */; };
 		6AC980BB2757DB3700128A10 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980BA2757DB3700128A10 /* String.swift */; };
@@ -69,7 +69,7 @@
 		0AFA21CA2747F2ED00A94008 /* FoodSpotlightAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSpotlightAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21CE2747F2ED00A94008 /* FoodSpotlightAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppUITests.swift; sourceTree = "<group>"; };
 		0AFA21D02747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6A730A66275ED4E500FE550B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Desktop/FoodeeApp2/Foodee/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		6A9FD2ED275FC116000C37CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../FoodeeApp/Foodee/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		6AC980B52757D8B100128A10 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6AC980B72757D8BE00128A10 /* DetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCard.swift; sourceTree = "<group>"; };
 		6AC980BA2757DB3700128A10 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -141,7 +141,6 @@
 		0AC8CA80275EBD180041DC70 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				6A730A66275ED4E500FE550B /* Assets.xcassets */,
 				0AC8CA81275EBD480041DC70 /* MyMapView.swift */,
 			);
 			path = Map;
@@ -180,6 +179,7 @@
 		0AFA21AD2747F2EC00A94008 /* FoodSpotlightApp */ = {
 			isa = PBXGroup;
 			children = (
+				6A9FD2ED275FC116000C37CB /* Assets.xcassets */,
 				0AA80EBC274FF06400497A88 /* Services */,
 				0AC8CA89275EBED90041DC70 /* Fonts */,
 				6AC980C42757E26000128A10 /* Helpers */,
@@ -370,7 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A730A67275ED4E500FE550B /* Assets.xcassets in Resources */,
+				6A9FD2EE275FC116000C37CB /* Assets.xcassets in Resources */,
 				0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

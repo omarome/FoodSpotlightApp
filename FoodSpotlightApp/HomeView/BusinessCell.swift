@@ -43,7 +43,7 @@ struct BusinessCell: View {
         .padding(.small)
         .background(Color.white)
         .cornerRadius(.large)
-        //.modifier(ShadowModifier())
+        .modifier(ShadowModifier())
     }
 }
 
