@@ -124,6 +124,46 @@ final class HomeViewModel: ObservableObject {
             }.store(in: &cancellables)
     }
     
+    
+    //Map direction ///////////////////// START //////////////////////
+    
+    @IBOutlet weak var myMapView: MKMapView!
+    
+    
+    func mapDirection(_ mapDirection: MKMapView, anatation: MKAnnotationView) {
+        
+        guard let coordinate = manager.location?.coordinate else { return }
+        
+        self.myMapView.removeOverlays(myMapView.overlays) // clear previous direction
+        
+        let startpoint = MKPlacemark(coordinate: coordinate) // user location
+        let endpoint = MKPlacemark(coordinate: coordinate) // restaurant location
+        
+        let request = MKDirections.Request() // request for implementing direction
+        
+            request.source = MKMapItem(placemark: startpoint) // from
+            request.destination = MKMapItem(placemark: endpoint) // to
+            request.transportType = .walking // by walking
+        
+        let direction = MKDirections(request: request)
+        direction.calculate { (response, error) in
+            guard let response = response else { return }
+            for route in response.routes {
+                self.myMapView.addOverlay(route.polyline)
+            }
+        }
+        
+        func mapDirection (_ mapDirection: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            let renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.strokeColor = .systemPink
+            renderer.lineWidth = 8
+            
+            return renderer
+        }
+    }
+        
+        ///////////////////////////////////////////////////////////////  END    ///////////////////////////////////////////////////////////
+    
     // MARK - Core Data
     
     func save(business: Business, with context: NSManagedObjectContext) throws {
