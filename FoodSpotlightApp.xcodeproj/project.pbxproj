@@ -14,6 +14,8 @@
 		0AC8CA86275EBE1C0041DC70 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA85275EBE1C0041DC70 /* RoundedCorners.swift */; };
 		0AC8CA88275EBEAC0041DC70 /* ShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA87275EBEAC0041DC70 /* ShadowModifier.swift */; };
 		0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */; };
+		0AF996302763809500A66560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF9962F2763809500A66560 /* Assets.xcassets */; };
+		0AF9963227638C3800A66560 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9963127638C3800A66560 /* FavoriteButton.swift */; };
 		0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */; };
 		0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* HomeView.swift */; };
 		0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */; };
@@ -21,7 +23,6 @@
 		0AFA21C52747F2ED00A94008 /* FoodSpotlightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21C42747F2ED00A94008 /* FoodSpotlightAppTests.swift */; };
 		0AFA21CF2747F2ED00A94008 /* FoodSpotlightAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21CE2747F2ED00A94008 /* FoodSpotlightAppUITests.swift */; };
 		0AFA21D12747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21D02747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift */; };
-		6A104BB5275FD3D700D7B5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A104BB4275FD3D700D7B5E5 /* Assets.xcassets */; };
 		6AC980B62757D8B100128A10 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B52757D8B100128A10 /* DetailView.swift */; };
 		6AC980B82757D8BE00128A10 /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980B72757D8BE00128A10 /* DetailCard.swift */; };
 		6AC980BB2757DB3700128A10 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980BA2757DB3700128A10 /* String.swift */; };
@@ -59,6 +60,8 @@
 		0AC8CA85275EBE1C0041DC70 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		0AC8CA87275EBEAC0041DC70 /* ShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowModifier.swift; sourceTree = "<group>"; };
 		0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0AF9962F2763809500A66560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Users/omar.almash/Downloads/FoodSpotlightApp-UI-b 2/FoodSpotlightApp/Assets.xcassets"; sourceTree = "<group>"; };
+		0AF9963127638C3800A66560 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSpotlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppApp.swift; sourceTree = "<group>"; };
 		0AFA21B02747F2EC00A94008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		0AFA21CA2747F2ED00A94008 /* FoodSpotlightAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSpotlightAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21CE2747F2ED00A94008 /* FoodSpotlightAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppUITests.swift; sourceTree = "<group>"; };
 		0AFA21D02747F2ED00A94008 /* FoodSpotlightAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6A104BB4275FD3D700D7B5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Desktop/FoodeeApp2/Foodee/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		6AC980B52757D8B100128A10 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6AC980B72757D8BE00128A10 /* DetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCard.swift; sourceTree = "<group>"; };
 		6AC980BA2757DB3700128A10 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -179,11 +181,11 @@
 		0AFA21AD2747F2EC00A94008 /* FoodSpotlightApp */ = {
 			isa = PBXGroup;
 			children = (
-				6A104BB4275FD3D700D7B5E5 /* Assets.xcassets */,
+				0AF9962F2763809500A66560 /* Assets.xcassets */,
 				0AA80EBC274FF06400497A88 /* Services */,
 				0AC8CA89275EBED90041DC70 /* Fonts */,
 				6AC980C42757E26000128A10 /* Helpers */,
-				6AC980C12757E19800128A10 /* Profile */,
+				6AC980C12757E19800128A10 /* Favorite */,
 				6AC980B92757DB0900128A10 /* Generated */,
 				6AC980B42757D88F00128A10 /* Details */,
 				0AC8CA7B275EBBCD0041DC70 /* HomeView */,
@@ -241,12 +243,13 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
-		6AC980C12757E19800128A10 /* Profile */ = {
+		6AC980C12757E19800128A10 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
 				6AC980C22757E1B000128A10 /* FavoriteView.swift */,
+				0AF9963127638C3800A66560 /* FavoriteButton.swift */,
 			);
-			path = Profile;
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 		6AC980C42757E26000128A10 /* Helpers */ = {
@@ -370,7 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A104BB5275FD3D700D7B5E5 /* Assets.xcassets in Resources */,
+				0AF996302763809500A66560 /* Assets.xcassets in Resources */,
 				0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +402,7 @@
 				6AC980B82757D8BE00128A10 /* DetailCard.swift in Sources */,
 				6AC980BD2757DC0900128A10 /* Images.swift in Sources */,
 				6AC980B62757D8B100128A10 /* DetailView.swift in Sources */,
+				0AF9963227638C3800A66560 /* FavoriteButton.swift in Sources */,
 				0AFA21BB2747F2ED00A94008 /* BusinessModel.xcdatamodeld in Sources */,
 				0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */,
 				0AC8CA88275EBEAC0041DC70 /* ShadowModifier.swift in Sources */,

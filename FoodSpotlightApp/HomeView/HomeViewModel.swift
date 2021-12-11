@@ -6,7 +6,7 @@
 //
 //  Created by Omar on 22.11.2021.
 //
-
+// all the logec for the middle where happining here
 import Combine
 import CoreLocation
 import ExtensionKit
@@ -24,7 +24,7 @@ final class HomeViewModel: ObservableObject {
     @Published var showModal: Bool
     @Published var cityName = ""
     @Published var completions = [String]()
-    @Published var showProfile = false
+    @Published var ShowFavorite = false
     
     var cancellables = [AnyCancellable]()
     

@@ -21,7 +21,6 @@ struct HomeView: View {
                 VStack{
                     Text(viewModel.cityName)
                         .font(.largeTitle.bold())
-                        
                         .frame(width: 200)
                         .foregroundColor(.blue)
                 }
@@ -48,18 +47,13 @@ struct HomeView: View {
                         }
                         BusinessCell(business: business)
                             .padding(.bottom, .small)
+                    
                     }
                     .listRowSeparator(.hidden)
                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                         Button("Save") {
-                            // Save here
-                            do {
-                                try viewModel.save(business: business, with: context)
-                                print("Saved")
-                            } catch {
-                                print(error.localizedDescription)
-                            }
                         }
+                                FavoriteButton(business: business)
                     }
                 }
                 .listStyle(.plain)
@@ -73,8 +67,10 @@ struct HomeView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         HStack{
    
-                            Button(action: { viewModel.showProfile.toggle() }) {
-                                Image(systemName: "heart")
+                            Button(action: { viewModel.ShowFavorite.toggle() }) {
+                                Image("heart-filled")
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
                                 
                             }
                         }
@@ -87,7 +83,7 @@ struct HomeView: View {
                 }
                 .edgesIgnoringSafeArea(.bottom)
             }
-            .sheet(isPresented: $viewModel.showProfile) {
+            .sheet(isPresented: $viewModel.ShowFavorite) {
                 FavoriteView()
             }
             .sheet(isPresented: $viewModel.showModal, onDismiss: nil) {

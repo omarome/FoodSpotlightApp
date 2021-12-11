@@ -21,6 +21,7 @@ struct DetailCard: View {
                     NavigationLink(destination: MyMapView(id: self.business.id ?? "WavvLdfdP6g8aZTtbBQHTw")) {
                                        Label("Location", systemImage: "location")
                                            .accessibilityLabel(Text("Location"))
+                        
                     }
                 }
                 //
@@ -116,8 +117,8 @@ struct DetailCard_Previews: PreviewProvider {
                         alias: nil,
                         name: "Sweetgreen",
                         imageURL: "https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg",
-                        isClaimed: nil,
-                        isClosed: nil,
+                        isClaimed: true,
+                        isClosed: true,
                         url: nil,
                         phone: nil,
                         displayPhone: "(123) 456-7890",
@@ -140,8 +141,8 @@ struct DetailCard_Previews: PreviewProvider {
                         alias: nil,
                         name: "Sweetgreen",
                         imageURL: "https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg",
-                        isClaimed: nil,
-                        isClosed: nil,
+                        isClaimed: true,
+                        isClosed: true,
                         url: nil,
                         phone: nil,
                         displayPhone: "(123) 456-7890",
