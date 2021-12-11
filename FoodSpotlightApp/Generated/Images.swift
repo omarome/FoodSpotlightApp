@@ -1,5 +1,8 @@
-// swiftlint:disable all
-// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+//
+//  FoodCategories.swift
+//  FoodSpotlightApp
+//
+//  Created by iosdev on 26.11.2021.
 
 #if os(macOS)
   import AppKit

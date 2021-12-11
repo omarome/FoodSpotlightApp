@@ -57,7 +57,7 @@ struct HomeView: View {
                     }
                 }
                 .listStyle(.plain)
-                .navigationTitle(Text("Food spotlight"))
+                .navigationTitle(Text(L10n.splfood))
                 .searchable(text: $viewModel.searchText, prompt: Text(L10n.searchFood)) {
                     ForEach(viewModel.completions, id: \.self) { completion in
                         Text(completion).searchCompletion(completion)
