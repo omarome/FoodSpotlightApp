@@ -2,6 +2,7 @@
 // Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 
 import Foundation
+import L10n_swift
 
 // swiftlint:disable superfluous_disable_command file_length implicit_return
 
@@ -12,16 +13,16 @@ import Foundation
 internal enum L10n {
   /// home.cat.all.text
   internal static let all = L10n.tr("Localizable", "All")
-  /// home.cat.beer.text
-  internal static let beer = L10n.tr("Localizable", "Beer")
-  /// home.cat.breakfast.text
-  internal static let breakfast = L10n.tr("Localizable", "Breakfast")
+  /// home.cat.pizza.text
+  internal static let pizza = L10n.tr("Localizable", "Pizza")
+  /// home.cat.burgers.text
+  internal static let burgers = L10n.tr("Localizable", "Burgers")
   /// home.cat.title
   internal static let categories = L10n.tr("Localizable", "Categories")
   /// home.cat.coffee.text
   internal static let coffee = L10n.tr("Localizable", "Coffee")
-  /// home.cat.donuts.text
-  internal static let donuts = L10n.tr("Localizable", "Donuts")
+  /// home.cat.chinese.text
+  internal static let chinese = L10n.tr("Localizable", "Chinese")
   /// detail.nav.title
   internal static let favorites = L10n.tr("Localizable", "Favorites")
   /// permission.desc.text
@@ -30,8 +31,12 @@ internal enum L10n {
   internal static let splfood = L10n.tr("Localizable", "Food Spotlight")
   /// permission.button.title
   internal static let getStarted = L10n.tr("Localizable", "Get Started")
-  /// home.cat.icecream.text
-  internal static let iceCream = L10n.tr("Localizable", "Ice Cream")
+  /// home.cat.sushi.text
+  internal static let sushi = L10n.tr("Localizable", "Sushi")
+  /// home.cat.british.text
+  internal static let british = L10n.tr("Localizable", "British")
+  /// home.cat.italian.text
+  internal static let italian = L10n.tr("Localizable", "Italian")
   /// home.placeholder.text
   internal static let searchFood = L10n.tr("Localizable", "Search food...")
 }
@@ -58,3 +63,4 @@ private final class BundleToken {
   }()
 }
 // swiftlint:enable convenience_type
+

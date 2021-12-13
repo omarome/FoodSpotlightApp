@@ -46,7 +46,7 @@ final class HomeViewModel: ObservableObject {
         region = .init()
         business = nil
         showModal = manager.authorizationStatus == .notDetermined
-        manager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        manager.desiredAccuracy = kCLLocationAccuracyBest
 
         request()
     }

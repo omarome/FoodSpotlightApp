@@ -36,7 +36,7 @@ struct PermissionView: View {
 
                 // Text & Button
                 Text(L10n.splfood)
-                    .font(.custom(.poppinsSemibold, size: 38))
+                    .font(.custom(.poppinsSemibold, size: 50))
                     .padding(.bottom, .large)
 
                 Text(L10n.findNewCoolSpotsToEat)
