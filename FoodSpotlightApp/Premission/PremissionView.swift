@@ -12,6 +12,7 @@ struct PermissionView: View {
     @State var isAnimating = false
     let action: () -> Void
     
+    // animation  
     var animation : Animation {
         .interpolatingSpring(stiffness: 0.5, damping: 0.5)
             .repeatForever()

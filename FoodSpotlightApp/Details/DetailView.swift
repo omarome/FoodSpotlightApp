@@ -26,7 +26,7 @@ struct DetailView: View {
         }.overlay(
             // Card
             viewModel.business != nil ? DetailCard(business: viewModel.business!) : nil,
-            alignment: .center
+            alignment: .top //.center
         )
         //.ignoresSafeArea(edges: [.top, .bottom])
         .onAppear {

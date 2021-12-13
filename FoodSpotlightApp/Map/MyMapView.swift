@@ -31,10 +31,9 @@ struct MyMapView: View {
                 
                 /// STILL IN PROGRESS
                 ///
-                /// 
-                ///
-                MapMarker(coordinate: $0.coordinate, tint: .blue) 
+                MapMarker(coordinate: $0.coordinate, tint: .blue)
             }
+            
             .frame(height: UIScreen.main.bounds.height * 1)
 
         }
@@ -56,6 +55,7 @@ struct MyMapView: View {
         }
         .navigationBarBackButtonHidden(true)
     }
+    
 }
 @available(iOS 15.0, *)
 struct MyMapView_Previews: PreviewProvider {
@@ -64,4 +64,5 @@ struct MyMapView_Previews: PreviewProvider {
             .environmentObject(HomeViewModel())
     }
 }
+
 
