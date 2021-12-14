@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import Combine
 
-let apiKey = "i24sX5x5ZwnVNn62LnB7qRu23AnHGShPBZTO927rV3m0hhhWYt_o7kv_DuLLx6scV35IykOqF7n9bLtNkR0JJ_51yE1iZNBUxRQjD-Q4FMkRZbw1gJlucNzok_WcYXYx"
+
 
 struct YelpApiService {
     // search term, user location, category      // output to update list
@@ -51,7 +51,7 @@ extension YelpApiService {
             .eraseToAnyPublisher()
     }
 }
-
+// the URL endPoint cases
 enum Endpoint {
     case search(term: String?, location: CLLocation, category: FoodCategory?)
     case detail(id: String)
@@ -60,14 +60,14 @@ enum Endpoint {
     var path: String {
         switch self {
         case .search:
-            return "/v3/businesses/search"
+            return APIConstants().APISearch
         case .detail(let id):
-            return "/v3/businesses/\(id)"
+            return "\(APIConstants().APIDetails)\(id)"
         case .completion:
-            return "/v3/autocomplete"
+            return APIConstants().APIComplation
         }
     }
-
+// the url query items with switch cases
     var queryItems: [URLQueryItem] {
         switch self {
         case .search(let term, let location, let category):
@@ -87,14 +87,14 @@ enum Endpoint {
             return []
         }
     }
-
+//make the url request and authorization with api key through token
     var request: URLRequest {
-        var urlComponents = URLComponents(string: "https://api.yelp.com")!
+        var urlComponents = URLComponents(string: APIConstants().APIBase)!
         urlComponents.path = path
         urlComponents.queryItems = queryItems
         let url = urlComponents.url!
         var request = URLRequest(url: url)
-        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(APIConstants().apiKey)", forHTTPHeaderField: "Authorization")
         return request
     }
 
@@ -311,6 +311,7 @@ extension Open {
     }
 
 }
+//getting only the necessary properties for code data
 
 extension Business {
     init(

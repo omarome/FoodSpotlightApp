@@ -10,14 +10,18 @@
 		0AA80EBE274FF09000497A88 /* YelpApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA80EBD274FF09000497A88 /* YelpApiService.swift */; };
 		0AC8CA7E275EBC630041DC70 /* PremissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA7D275EBC630041DC70 /* PremissionView.swift */; };
 		0AC8CA82275EBD480041DC70 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA81275EBD480041DC70 /* MyMapView.swift */; };
-		0AC8CA84275EBD9D0041DC70 /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA83275EBD9D0041DC70 /* BusinessCell.swift */; };
 		0AC8CA86275EBE1C0041DC70 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA85275EBE1C0041DC70 /* RoundedCorners.swift */; };
 		0AC8CA88275EBEAC0041DC70 /* ShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC8CA87275EBEAC0041DC70 /* ShadowModifier.swift */; };
-		0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */; };
+		0AD8060F2767CAE90059C9CC /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 0AD8060E2767CAE90059C9CC /* L10n-swift */; };
+		0AD806112768001C0059C9CC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD806102768001C0059C9CC /* APIConstants.swift */; };
+		0AD80614276809820059C9CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD80613276809820059C9CC /* HomeView.swift */; };
+		0AD80616276809E90059C9CC /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD80615276809E90059C9CC /* BusinessCell.swift */; };
+		0AD8061827680A360059C9CC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8061727680A360059C9CC /* HomeViewModel.swift */; };
+		0AD8061A27680A900059C9CC /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8061927680A900059C9CC /* CategoryView.swift */; };
 		0AE5DFA72764D91E002B1460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE5DF822764D91E002B1460 /* Assets.xcassets */; };
+		0AE906A327666E3000C289DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AE906A527666E3000C289DB /* Localizable.strings */; };
 		0AF9963227638C3800A66560 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF9963127638C3800A66560 /* FavoriteButton.swift */; };
 		0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */; };
-		0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B02747F2EC00A94008 /* HomeView.swift */; };
 		0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */; };
 		0AFA21BB2747F2ED00A94008 /* BusinessModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21B92747F2ED00A94008 /* BusinessModel.xcdatamodeld */; };
 		0AFA21C52747F2ED00A94008 /* FoodSpotlightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA21C42747F2ED00A94008 /* FoodSpotlightAppTests.swift */; };
@@ -31,7 +35,6 @@
 		6AC980C32757E1B000128A10 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980C22757E1B000128A10 /* FavoriteView.swift */; };
 		6AC980C62757E28700128A10 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980C52757E28700128A10 /* CGFloat.swift */; };
 		6AC980C82757E2AC00128A10 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC980C72757E2AC00128A10 /* Font.swift */; };
-		6AD4F5322751185600EB87A8 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4F5312751185600EB87A8 /* CategoryView.swift */; };
 		6AD4F53427511B2200EB87A8 /* FoodCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4F53327511B2200EB87A8 /* FoodCategories.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,15 +59,19 @@
 		0AA80EBD274FF09000497A88 /* YelpApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpApiService.swift; sourceTree = "<group>"; };
 		0AC8CA7D275EBC630041DC70 /* PremissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremissionView.swift; sourceTree = "<group>"; };
 		0AC8CA81275EBD480041DC70 /* MyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
-		0AC8CA83275EBD9D0041DC70 /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
 		0AC8CA85275EBE1C0041DC70 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		0AC8CA87275EBEAC0041DC70 /* ShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowModifier.swift; sourceTree = "<group>"; };
-		0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0AD806102768001C0059C9CC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		0AD80613276809820059C9CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0AD80615276809E90059C9CC /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		0AD8061727680A360059C9CC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0AD8061927680A900059C9CC /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		0AE5DF822764D91E002B1460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AE906A427666E3000C289DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AE906A627666E3200C289DB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AF9963127638C3800A66560 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSpotlightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFA21AE2747F2EC00A94008 /* FoodSpotlightAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSpotlightAppApp.swift; sourceTree = "<group>"; };
-		0AFA21B02747F2EC00A94008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0AFA21B52747F2ED00A94008 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AFA21BA2747F2ED00A94008 /* FoodSpotlightApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodSpotlightApp.xcdatamodel; sourceTree = "<group>"; };
 		0AFA21C02747F2ED00A94008 /* FoodSpotlightAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSpotlightAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +90,6 @@
 		6AC980CA2757E46100128A10 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		6AC980CB2757E46100128A10 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		6AC980CC2757EF4B00128A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		6AD4F5312751185600EB87A8 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		6AD4F53327511B2200EB87A8 /* FoodCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC980C02757DDF900128A10 /* ExtensionKit in Frameworks */,
+				0AD8060F2767CAE90059C9CC /* L10n-swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,19 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				0AA80EBD274FF09000497A88 /* YelpApiService.swift */,
+				0AD806102768001C0059C9CC /* APIConstants.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		0AC8CA7B275EBBCD0041DC70 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				6AD4F5312751185600EB87A8 /* CategoryView.swift */,
-				0AFA21B02747F2EC00A94008 /* HomeView.swift */,
-				0AD877E9274AFD3600582AE9 /* HomeViewModel.swift */,
-				0AC8CA83275EBD9D0041DC70 /* BusinessCell.swift */,
-			);
-			path = HomeView;
 			sourceTree = "<group>";
 		};
 		0AC8CA7C275EBC0B0041DC70 /* Premission */ = {
@@ -158,10 +155,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		0AD80612276808C30059C9CC /* HomeVM */ = {
+			isa = PBXGroup;
+			children = (
+				0AD80613276809820059C9CC /* HomeView.swift */,
+				0AD80615276809E90059C9CC /* BusinessCell.swift */,
+				0AD8061727680A360059C9CC /* HomeViewModel.swift */,
+				0AD8061927680A900059C9CC /* CategoryView.swift */,
+			);
+			path = HomeVM;
+			sourceTree = "<group>";
+		};
 		0AE5DF812764D91E002B1460 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				0AE5DF822764D91E002B1460 /* Assets.xcassets */,
+				0AE906A527666E3000C289DB /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,6 +198,7 @@
 		0AFA21AD2747F2EC00A94008 /* FoodSpotlightApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AD80612276808C30059C9CC /* HomeVM */,
 				0AE5DF812764D91E002B1460 /* Resources */,
 				0AA80EBC274FF06400497A88 /* Services */,
 				0AC8CA89275EBED90041DC70 /* Fonts */,
@@ -196,7 +206,6 @@
 				6AC980C12757E19800128A10 /* Favorite */,
 				6AC980B92757DB0900128A10 /* Generated */,
 				6AC980B42757D88F00128A10 /* Details */,
-				0AC8CA7B275EBBCD0041DC70 /* HomeView */,
 				0AC8CA7C275EBC0B0041DC70 /* Premission */,
 				0AC8CA80275EBD180041DC70 /* Map */,
 				6AC980CC2757EF4B00128A10 /* Info.plist */,
@@ -289,6 +298,7 @@
 			name = FoodSpotlightApp;
 			packageProductDependencies = (
 				6AC980BF2757DDF900128A10 /* ExtensionKit */,
+				0AD8060E2767CAE90059C9CC /* L10n-swift */,
 			);
 			productName = FoodSpotlightApp;
 			productReference = 0AFA21AB2747F2EC00A94008 /* FoodSpotlightApp.app */;
@@ -361,10 +371,12 @@
 			knownRegions = (
 				en,
 				Base,
+				fi,
 			);
 			mainGroup = 0AFA21A22747F2EC00A94008;
 			packageReferences = (
 				6AC980BE2757DDF900128A10 /* XCRemoteSwiftPackageReference "ExtensionKit" */,
+				0AD8060D2767CAE90059C9CC /* XCRemoteSwiftPackageReference "L10n-swift" */,
 			);
 			productRefGroup = 0AFA21AC2747F2EC00A94008 /* Products */;
 			projectDirPath = "";
@@ -383,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE5DFA72764D91E002B1460 /* Assets.xcassets in Resources */,
+				0AE906A327666E3000C289DB /* Localizable.strings in Resources */,
 				0AFA21B62747F2ED00A94008 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,16 +424,17 @@
 				6AC980B82757D8BE00128A10 /* DetailCard.swift in Sources */,
 				6AC980BD2757DC0900128A10 /* Images.swift in Sources */,
 				6AC980B62757D8B100128A10 /* DetailView.swift in Sources */,
+				0AD8061827680A360059C9CC /* HomeViewModel.swift in Sources */,
 				0AF9963227638C3800A66560 /* FavoriteButton.swift in Sources */,
 				0AFA21BB2747F2ED00A94008 /* BusinessModel.xcdatamodeld in Sources */,
-				0AD877EA274AFD3600582AE9 /* HomeViewModel.swift in Sources */,
 				0AC8CA88275EBEAC0041DC70 /* ShadowModifier.swift in Sources */,
-				6AD4F5322751185600EB87A8 /* CategoryView.swift in Sources */,
+				0AD806112768001C0059C9CC /* APIConstants.swift in Sources */,
+				0AD8061A27680A900059C9CC /* CategoryView.swift in Sources */,
 				6AC980C32757E1B000128A10 /* FavoriteView.swift in Sources */,
 				6AC980C82757E2AC00128A10 /* Font.swift in Sources */,
-				0AFA21B12747F2EC00A94008 /* HomeView.swift in Sources */,
+				0AD80614276809820059C9CC /* HomeView.swift in Sources */,
+				0AD80616276809E90059C9CC /* BusinessCell.swift in Sources */,
 				6AC980C62757E28700128A10 /* CGFloat.swift in Sources */,
-				0AC8CA84275EBD9D0041DC70 /* BusinessCell.swift in Sources */,
 				6AD4F53427511B2200EB87A8 /* FoodCategories.swift in Sources */,
 				0AFA21AF2747F2EC00A94008 /* FoodSpotlightAppApp.swift in Sources */,
 				6AC980BB2757DB3700128A10 /* String.swift in Sources */,
@@ -462,6 +476,18 @@
 			targetProxy = 0AFA21CB2747F2ED00A94008 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AE906A527666E3000C289DB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE906A427666E3000C289DB /* en */,
+				0AE906A627666E3200C289DB /* fi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0AFA21D22747F2ED00A94008 /* Debug */ = {
@@ -783,6 +809,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0AD8060D2767CAE90059C9CC /* XCRemoteSwiftPackageReference "L10n-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Decybel07/L10n-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		6AC980BE2757DDF900128A10 /* XCRemoteSwiftPackageReference "ExtensionKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gtokman/ExtensionKit.git";
@@ -794,6 +828,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0AD8060E2767CAE90059C9CC /* L10n-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AD8060D2767CAE90059C9CC /* XCRemoteSwiftPackageReference "L10n-swift" */;
+			productName = "L10n-swift";
+		};
 		6AC980BF2757DDF900128A10 /* ExtensionKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6AC980BE2757DDF900128A10 /* XCRemoteSwiftPackageReference "ExtensionKit" */;

@@ -22,10 +22,10 @@ struct FavoriteButton: View {
             }
         
         }, label: {
-            Image( systemName:  "heart.fill" )
+            Image( "heart-filled" )
                 .resizable()
                 .aspectRatio( contentMode: .fit)
-                .frame(width: 40)
+                .frame(width: 60)
                 .foregroundColor( .red )
         })
 

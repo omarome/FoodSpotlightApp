@@ -1,10 +1,10 @@
-
 //  CategoryView.swift
 //  FoodSpotlightApp
 //
 //  Created by iosdev on 26.11.2021.
 //
 import SwiftUI
+import L10n_swift
 
 struct CategoryView: View {
 
@@ -16,20 +16,14 @@ struct CategoryView: View {
             HStack {
                 Text(category.emoji)
                     .font(.title)
-                Text(category.rawValue.capitalized)
+                Text(category.name.capitalized)
                     .bold()
             }
         }
         .padding(.small)
-        //.padding(.horizontal, .medium)
-        .background(selectedCategory == category ? Color.yellow : .white)
+        .padding(.horizontal, .medium)
+        .background(selectedCategory == category ? Color.blue : .white)
         .cornerRadius(20)
-        .foregroundColor(.black)
-    }
-}
-
-struct CategoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryView(selectedCategory: .constant(.coffee), category: .coffee)
+        .foregroundColor(selectedCategory == category ? Color.white : .black)
     }
 }

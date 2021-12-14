@@ -8,7 +8,7 @@
 import ExtensionKit
 import SwiftUI
 
-@available(iOS 15.0, *)
+// providing all the necessary details of a business for the DetailView
 struct DetailCard: View {
    
     let business: Business
@@ -16,11 +16,12 @@ struct DetailCard: View {
         NavigationView{
           
             VStack(alignment: .leading, spacing: 2) {
-                //  a clickable label to mapview
+                //  a label to redirect to mapview
                 VStack{
                     NavigationLink(destination: MyMapView(id: self.business.id ?? "WavvLdfdP6g8aZTtbBQHTw")) {
                                        Label("Location", systemImage: "location")
                                            .accessibilityLabel(Text("Location"))
+                        
                         
                     }
                 }
@@ -99,66 +100,11 @@ struct DetailCard: View {
     func phone() {
         UIApplication.shared.openPhone(calling: business.phone ?? "")
     }
-
+    
+// direct the user to google map
     func navigate() {
         let query = "\(business.coordinates?.latitude ?? 0),\(business.coordinates?.longitude ?? 0)"
         UIApplication.shared.openExternalMapApp(query: query)
     }
 }
 
-@available(iOS 15.0, *)
-struct DetailCard_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            DetailCard(
-                business:
-                    .init(
-                        id: nil,
-                        alias: nil,
-                        name: "Sweetgreen",
-                        imageURL: "https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg",
-                        isClaimed: true,
-                        isClosed: true,
-                        url: nil,
-                        phone: nil,
-                        displayPhone: "(123) 456-7890",
-                        reviewCount: nil,
-                        categories: [.init(alias: nil, title: "healthy")],
-                        rating: 4.5,
-                        location: .init(address1: nil, address2: nil, address3: nil, city: nil, zipCode: nil, country: nil, state: nil, displayAddress: ["12 main st"], crossStreets: nil),
-                        coordinates: nil,
-                        photos: ["https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg", "https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg"],
-                        price: "$",
-                        hours: nil,
-                        transactions: nil,
-                        specialHours: nil
-                    )
-            )
-            DetailCard(
-                business:
-                    .init(
-                        id: nil,
-                        alias: nil,
-                        name: "Sweetgreen",
-                        imageURL: "https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg",
-                        isClaimed: true,
-                        isClosed: true,
-                        url: nil,
-                        phone: nil,
-                        displayPhone: "(123) 456-7890",
-                        reviewCount: nil,
-                        categories: [.init(alias: nil, title: "healthy")],
-                        rating: 4.5,
-                        location: .init(address1: nil, address2: nil, address3: nil, city: nil, zipCode: nil, country: nil, state: nil, displayAddress: ["12 main st"], crossStreets: nil),
-                        coordinates: nil,
-                        photos: ["https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg", "https://s3-media1.fl.yelpcdn.com/bphoto/j_Ut4i4j2Q4d2TVEDPVt4g/o.jpg"],
-                        price: "$",
-                        hours: nil,
-                        transactions: nil,
-                        specialHours: nil
-                    )
-            )
-            .environment(\.colorScheme, .dark)
-        }
-    }
-}

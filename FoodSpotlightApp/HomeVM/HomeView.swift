@@ -18,11 +18,13 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack{
-                VStack{
+                HStack{
                     Text(viewModel.cityName)
-                        .font(.largeTitle.bold())
-                        .frame(width: 200)
+                        .font(.title .bold())
+                        .frame(width: 120)
                         .foregroundColor(.blue)
+
+                    Label("",systemImage:    "location").foregroundColor(.blue)
                 }
             VStack(alignment: .leading) {
                 // Category
@@ -51,8 +53,9 @@ struct HomeView: View {
                     }
                     .listRowSeparator(.hidden)
                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                        Button("Save") {
+                        Button("Add to Favorites") {
                         }
+                       
                                 FavoriteButton(business: business)
                     }
                 }

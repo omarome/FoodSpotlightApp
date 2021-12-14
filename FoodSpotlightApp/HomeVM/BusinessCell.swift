@@ -4,11 +4,10 @@
 //
 //  Created by Omar on 6.12.2021.
 //
-
 import ExtensionKit
 import SwiftUI
 
-@available(iOS 15.0, *)
+// provide the necessary details for each cell in the list displayed in the home view
 struct BusinessCell: View {
     let business: Business
 
@@ -38,6 +37,9 @@ struct BusinessCell: View {
                 }
             }
             Spacer()
+            HStack{
+                Label( "", systemImage: "chevron.backward.circle.fill").foregroundColor(.blue)
+            }
         }
         .foregroundColor(.black)
         .padding(.small)
@@ -47,7 +49,7 @@ struct BusinessCell: View {
     }
 }
 
-@available(iOS 15.0, *)
+
 struct BusinessCell_Previews: PreviewProvider {
     static var previews: some View {
         Group {

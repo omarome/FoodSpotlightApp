@@ -1,12 +1,10 @@
 
-
-//
 //  ContentViewModel.swift
 //  FoodSpotlightApp
 //
 //  Created by Omar on 22.11.2021.
 //
-// all the logec for the middle where happining here
+// most of the logec for the Middleware happining here
 import Combine
 import CoreLocation
 import ExtensionKit
@@ -27,8 +25,9 @@ final class HomeViewModel: ObservableObject {
     @Published var ShowFavorite = false
     
     var cancellables = [AnyCancellable]()
-    
+    //location manager 
     let manager = CLLocationManager()
+    
     
     lazy var container: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "BusinessModel")
@@ -39,7 +38,7 @@ final class HomeViewModel: ObservableObject {
         }
         return container
     }()
-
+// initilazing the model variables
     init() {
         searchText = ""
         selectedCategory = .all
@@ -50,7 +49,7 @@ final class HomeViewModel: ObservableObject {
 
         request()
     }
-
+//request user premission to track his location
     func requestPermission() {
         manager
             .requestLocationWhenInUseAuthorization()
@@ -64,7 +63,7 @@ final class HomeViewModel: ObservableObject {
             .compactMap(\.first)
             .eraseToAnyPublisher()
     }
-
+// send a request to the api using the seachText variable to bring the results according to the latest current location of the user
     func request(service: YelpApiService = .live) {
         let location = getLocation().share()
 
@@ -103,7 +102,7 @@ final class HomeViewModel: ObservableObject {
             .map { $0.map(\.text) }
             .assign(to: &$completions)
     }
-
+// sending a reuest to the server to provide the details of the places to the user
     func requestDetails(forId id: String, service: YelpApiService = .live) {
 
         service
@@ -122,48 +121,9 @@ final class HomeViewModel: ObservableObject {
                 self?.business = business
                 self?.region = region
             }.store(in: &cancellables)
+        
     }
-    
-    
-    //Map direction ///////////////////// START //////////////////////
-    
-    @IBOutlet weak var myMapView: MKMapView!
-    
-    
-    func mapDirection(_ mapDirection: MKMapView, anatation: MKAnnotationView) {
-        
-        guard let coordinate = manager.location?.coordinate else { return }
-        
-        self.myMapView.removeOverlays(myMapView.overlays) // clear previous direction
-        
-        let startpoint = MKPlacemark(coordinate: coordinate) // user location
-        let endpoint = MKPlacemark(coordinate: coordinate) // restaurant location
-        
-        let request = MKDirections.Request() // request for implementing direction
-        
-            request.source = MKMapItem(placemark: startpoint) // from
-            request.destination = MKMapItem(placemark: endpoint) // to
-            request.transportType = .walking // by walking
-        
-        let direction = MKDirections(request: request)
-        direction.calculate { (response, error) in
-            guard let response = response else { return }
-            for route in response.routes {
-                self.myMapView.addOverlay(route.polyline)
-            }
-        }
-        
-        func mapDirection (_ mapDirection: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-            let renderer = MKPolylineRenderer(overlay: overlay)
-            renderer.strokeColor = .systemPink
-            renderer.lineWidth = 8
-            
-            return renderer
-        }
-    }
-        
-        ///////////////////////////////////////////////////////////////  END    ///////////////////////////////////////////////////////////
-    
+
     // MARK - Core Data
     
     func save(business: Business, with context: NSManagedObjectContext) throws {
@@ -175,5 +135,4 @@ final class HomeViewModel: ObservableObject {
         model.rating = business.formattedRating
         try context.save()
     }
-
 }

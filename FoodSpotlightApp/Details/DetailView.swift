@@ -8,7 +8,7 @@
 import MapKit
 import SwiftUI
 
-@available(iOS 15.0, *)
+// displaying a detail view for an item 
 struct DetailView: View {
     
     let id: String
@@ -48,7 +48,7 @@ struct DetailView: View {
     }
 }
 
-@available(iOS 15.0, *)
+
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(id: "WavvLdfdP6g8aZTtbBQHTw")

@@ -10,7 +10,7 @@ import MapKit
 import SwiftUI
 import AVFoundation
 
-@available(iOS 15.0, *)
+// map screen 
 struct MyMapView: View {
     let id: String
     @EnvironmentObject var viewModel: HomeViewModel
@@ -32,6 +32,7 @@ struct MyMapView: View {
                 /// STILL IN PROGRESS
                 ///
                 MapMarker(coordinate: $0.coordinate, tint: .blue)
+                
             }
             
             .frame(height: UIScreen.main.bounds.height * 1)
@@ -40,9 +41,11 @@ struct MyMapView: View {
         .ignoresSafeArea(edges: [.top, .bottom])
         .onAppear {
             viewModel.requestDetails(forId: id)
+           
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
+                
                 Button(action: { presentationMode.wrappedValue.dismiss() }) {
                     HStack{
                         Image( systemName: "chevron.backward.circle.fill")
@@ -57,7 +60,7 @@ struct MyMapView: View {
     }
     
 }
-@available(iOS 15.0, *)
+
 struct MyMapView_Previews: PreviewProvider {
     static var previews: some View {
         MyMapView(id: "WavvLdfdP6g8aZTtbBQHTw")
